@@ -42,6 +42,11 @@ function galleryF () {
     let data = this.getAttribute('data')
     invesee()
     document.querySelector(`.img-container[data="${data}"]`).style.display = 'block'
+
+    tab.forEach(function(element) {
+        element.classList.remove('active')
+    })
+    this.classList.add('active')
 }
 
 function invesee () {
