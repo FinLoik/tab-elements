@@ -120,3 +120,64 @@ li {
 
 	}
 }
+
+.btm {
+    margin-top: 20rem;
+}
+/* ----------------- mouse events*/
+.action-btn-section {
+    margin-top: 5rem;
+    text-align: center;
+    position: relative;
+}
+.point {
+    border: #02C9AF solid 0.1rem;
+    background-color: #02C9AF;
+    border-radius: 1rem 0 1rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    position:relative;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    box-shadow: rgba(102, 96, 100, 0.4) 0px 5px, rgba(173, 95, 144, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    /* display: none; */
+}
+.action-btn-section button {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    width: 50%;
+    right: 0;
+    border-radius: 1rem 0 1rem;
+    top: 0.65rem;
+    text-align: center;
+    z-index: 0;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 2px, rgb(31, 193, 27) 0px 0px 0px 4px, rgb(255, 217, 19) 0px 0px 0px 6px, rgb(255, 156, 85) 0px 0px 0px 8px, rgb(255, 85, 85) 0px 0px 0px 10px;
+    
+}
+.box-box {
+    height: 5rem;
+}
+.rainbow-circle {
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem auto;
+    border-radius: 100%;
+    border: rgb(255, 255, 255) solid 0.2rem;
+}
+
+.rainbow-circle p {
+    color: #049CE4;
+    font-weight: bold;;
+    text-align: center;
+    padding-top: 3rem;
+}
+.circle-section h1 {
+    color: #049CE4;
+    text-align: center;
+    margin-bottom: 0;
+}

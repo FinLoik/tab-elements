@@ -54,3 +54,29 @@ function invesee () {
         items[i].style.display = 'none'
     }   
 }
+
+// -------------------------------------
+document.querySelector('.point').onmouseenter = function () {
+    this.style.display = 'none'
+} 
+document.querySelector('.action-btn-section button').ondblclick = function () {
+    this.innerHTML = 'Coupon - #JECK2241'
+    console.log(this.innerHTML)
+} 
+
+// circle
+function random(min, max) {
+    return Math.round(Math.random() * (max - min) + min)
+}
+
+  
+document.querySelector('.rainbow-circle').onmousewheel = function () {
+    let r,g,b
+    r = random(1,999)
+    g = random(1,999)
+    b = random(1,999)
+    console.log(r,g,b)
+    this.style.backgroundColor = `rgb(${r},${g},${b})`
+    document.querySelector('.rainbow-circle p').innerHTML = `rgb (${r},${g},${b})`
+    return false
+}
