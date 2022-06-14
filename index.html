@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="closeModal"></div>
+   <div class="body-container">
     <nav>
         <div class="bar">
             <div class="bar-left">
@@ -22,6 +24,16 @@
     </nav>
 
     <div class="main-section">
+        <div class="modal-section">
+            <div class="modal-window invsee">
+                <h1>Press the button to close web-page</h1>
+                <form onsubmit="closeWEB(); return false">
+                    <input type="checkbox" id="modal-checkbox" required>
+                    <label for="modal-checkbox">I agree that I want to close the current page <br> and am familiar with the terms of the offer.</label> <br>
+                    <button id="modal-btn" type="submit">I agree</button>
+                </form>
+            </div>
+        </div>
         <div class="banner">
             <div class="">
                 <h1>Designers company</h1>
@@ -83,6 +95,7 @@
         <p>Required Company</p>
         <p>2022-2023</p>
     </footer>
+   </div>
     <script src="script.js"></script>
 </body>
 </html>

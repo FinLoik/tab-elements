@@ -80,3 +80,24 @@ document.querySelector('.rainbow-circle').onmousewheel = function () {
     document.querySelector('.rainbow-circle p').innerHTML = `rgb (${r},${g},${b})`
     return false
 }
+
+// -------------------- modal
+
+// let closeMdlBtn = document.querySelector('.closeModal')
+
+let mdlW = document.querySelector('.modal-window')
+document.querySelector('.closeModal').onclick = function () {
+    mdlW.classList.toggle('invsee')
+}
+
+document.onkeydown = function(event) {
+    if (mdlW.classList.contains('invsee')) {
+
+    } else {
+        mdlW.classList.toggle('invsee')
+    }
+}
+
+function closeWEB() {
+    document.querySelector('.body-container').style.display ='none'
+}
